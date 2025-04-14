@@ -79,9 +79,9 @@ def find_symbols_with_price_threshold(threshold: float = 0.6) -> Dict[str, str]:
 
 def create_orders(symbol: str, base_price: float) -> List[Dict]: #order
     price_levels = {
-        '2%': round(base_price * 0.98, 4),
-        '5%': round(base_price * 0.95, 4),
-        '8%': round(base_price * 0.92, 4)
+        '2%': round(base_price * 0.95, 4),
+        '5%': round(base_price * 1.01, 4),
+        '8%': round(base_price * 1.02, 4)
     }
 
     orders = []
